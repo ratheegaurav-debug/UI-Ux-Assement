@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Meetup page</title>
+    <style>
+        body { 
+            text-align: center;
+            
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+                width: 100%;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        section {
+          
+            margin: 20px auto;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tech Meetup</h1>
+    <p>Date: September 30, 2026</p>
+    <p></p>Time: 6:00 PM - 9:00 PM </p>
+    <button>Regeister</button>
+     <section>
+        <h2>Speakers</h2>
+        <ul>
+            <li>John Doe - "The Future of AI"</li>
+            <li>Jane Smith - "Cybersecurity Trends"</li>
+            <li>Emily Davis - "Cloud Computing Innovations"</li>
+        </ul>
+
+        <h2>Venue</h2>
+        <p>Tech Conference Center, 123 Main Street, Cityville</p>
+        <h2>Agenda</h2>
+        <ul>
+            <li>6:00 PM - 6:30 PM: Registration and Networking</li>
+            <li>6:30 PM - 7:15 PM: Keynote by John Doe</li>
+            <li>7:15 PM - 8:00 PM: Talk by Jane Smith</li>
+            <li>8:00 PM - 8:45 PM: Talk by Emily Davis</li>
+            <li>8:45 PM - 9:00 PM: Closing Remarks and Q&A</li>
+     </section>
+     <footer> Sponsors <img src="data:image/png;base64,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" placeholder="Sponsors logo"></footer>
+</body>
+
+</html>

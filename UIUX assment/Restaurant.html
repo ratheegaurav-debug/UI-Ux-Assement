@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu </title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+
+        }
+        section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid #ccc;
+            text-align: center;
+        }
+        #price {
+
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Delhi Dhaba Menu</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <h2>Appetizers</h2>
+                <ul>
+                    <li>Paneer Tikka</li> <span id="price">$9.99</span>
+                    <li>Chicken 65</li><span id="price">$12.99</span>
+                    <li>Veg Spring Rolls</li><span id="price">$5.99</span>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Mains</h2>
+                <ul>
+                    <li>Shahi Paneer</li><span>$11.99</span>
+                    <li>Dal Makhni</li><span>$8.99</span>
+                    <li>Biryani</li><span>$15.99</span>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
